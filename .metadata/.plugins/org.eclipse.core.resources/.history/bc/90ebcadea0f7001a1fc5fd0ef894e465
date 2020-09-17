@@ -1,0 +1,35 @@
+package com.tdd.refactoring.example.test;
+
+import static org.junit.Assert.*;
+
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.tdd.refactoring.example.BookShelfRefactoringExample2;
+
+public class BookShelfRefactoringExampleTest2 {
+
+	@Test
+	public void emptyBookShelfWhenNoBookAdded() {
+		BookShelfRefactoringExample2 shelf = new BookShelfRefactoringExample2();
+		List<String> books = shelf.selectBooks();
+		assertTrue("BookShelf should be empty.", books.isEmpty());
+	}
+
+	/*
+	 * This test case will verify that if we add two books to the shelf it will have
+	 * two books
+	 */
+
+	@Test
+	public void bookshelfContainsTwoBooksWhenTwoBooksAdded() {
+		BookShelfRefactoringExample2 shelf = new BookShelfRefactoringExample2();
+		shelf.add("Effective Java");
+		shelf.add("Code Complete");
+		List<String> books = shelf.selectBooks();
+		assertEquals("BookShelf should have two books.", 2, books.size());
+	}
+}

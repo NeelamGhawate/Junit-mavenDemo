@@ -1,0 +1,25 @@
+package com.ngtech.SingletonPattern;
+
+public class MySingleton 
+{
+   private static MySingleton obj=null;
+   
+   private MySingleton()
+   {}
+   
+	public void  display()
+	{
+		System.out.println("Hello ,This is Neelam");
+	}
+	
+	public static MySingleton getInstance()
+	{
+		if(obj==null)
+		{
+			obj=new MySingleton();
+		}
+
+		return obj;
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.ngtech.AbstarctFactoryPattern;
+
+public class HotDrinksFactory 
+{
+	public static Drinks getColdDrinks(String ch)
+	{
+         if (ch.equalsIgnoreCase("tea"))
+	{
+		return new Tea();
+	}
+	else
+	{
+		return new Coffee();
+	}
+}
+}

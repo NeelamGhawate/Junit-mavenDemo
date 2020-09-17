@@ -1,0 +1,10 @@
+package com.ngtech.SingletonPattern;
+
+public class MySingletonTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

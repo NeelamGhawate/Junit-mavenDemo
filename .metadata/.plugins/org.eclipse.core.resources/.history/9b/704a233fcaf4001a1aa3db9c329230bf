@@ -1,0 +1,22 @@
+package com.ngtech.AbstarctFactoryPattern;
+
+public class DrinksTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		DrinkAbstarctFactory daf=new DrinkAbstarctFactory();
+		
+		DrinkFactory coldf=daf.getDrinksFactory("coldFact");
+		Drinks d1=coldf.getDrink("Tea");
+ 		
+		DrinkFactory hotf=daf.getDrinksFactory("coldFact");
+		Drinks d2=hotf.getDrink("coffee");
+ 		
+	
+		d1.drink();
+		d2.drink();
+
+	}
+
+}

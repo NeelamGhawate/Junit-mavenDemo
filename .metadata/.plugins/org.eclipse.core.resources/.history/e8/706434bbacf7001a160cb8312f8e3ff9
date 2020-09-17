@@ -1,0 +1,19 @@
+package io.javabrais;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.ngtech.CalculatorData;
+
+public class mathUtilsTest2 {
+
+	@Test
+	public final void test() {
+		mathUtils c=new mathUtils();
+		long result=c.sum(45,50);
+		assertEquals(95,result);
+		//System.out.println("This testcase run");
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.ngtech;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalculatorTest {
+@Test
+public void testSum()
+{
+	CalculatorData c=new CalculatorData();
+	long result=c.sum(45,50);
+	assertEquals(96,result);
+} 
+
+@Test
+public void testProduct(){
+	CalculatorData calculator = new CalculatorData();
+    long result = calculator.mult(45, 50);
+    assertEquals(2250, result);
+}
+}

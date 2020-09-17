@@ -1,0 +1,14 @@
+package io.javabrais;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class mathUtilsTest2 {
+
+	@Test
+	public final void test() {
+		System.out.println("This testcase run");
+	}
+
+}

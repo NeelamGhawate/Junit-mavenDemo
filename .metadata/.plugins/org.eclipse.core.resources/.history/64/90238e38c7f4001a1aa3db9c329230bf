@@ -1,0 +1,16 @@
+package com.ngtech.AbstarctFactoryPattern;
+
+public class ColdDrinksFactory implements DrinkFactory
+{
+	public  ColdDrinks getColdDrinks(String ch)
+	{
+         if (ch.equalsIgnoreCase("coke"))
+	{
+		return new Coke();
+	}
+	else
+	{
+		return new Pepsi();
+	}
+}
+}

@@ -1,0 +1,33 @@
+package com.tdd.refactoring.example;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class BookShelfRefactoringExample6 {
+
+	private final List<String> books = new ArrayList<String>();
+
+	/*
+	 * public List<String> books() { return books; }
+	 */
+
+	public List<String> selectBooks() {
+		return Collections.unmodifiableList(books);
+	}
+	
+	/*
+	 * public void add(String bookToAdd) { books.add(bookToAdd); }
+	 */
+	 
+	
+	/* 
+	 * Method for user to add multiple books at once. We can refactor the add method
+	 * to take a vararg method argument instead of simple String
+	 */
+
+	public void add(String... booksToAdd) {
+		Arrays.stream(booksToAdd).forEach(book -> books.add(book));
+	}
+}

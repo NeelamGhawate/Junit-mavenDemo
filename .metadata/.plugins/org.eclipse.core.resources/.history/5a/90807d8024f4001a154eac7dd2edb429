@@ -1,0 +1,6 @@
+package com.ngtech.FactoryPattern;
+
+public class Drinks {
+
+	public void drink();
+}

@@ -1,0 +1,16 @@
+package com.ngtech.SingletonPattern;
+
+public class MySingletonTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		MySingleton mc1= new MySingleton();
+		MySingleton mc2=new MySingleton();
+		
+		System.out.println("Ref:" + mc1.hashCode());
+		System.out.println("Ref:" + mc2.hashCode());
+
+	}
+
+}

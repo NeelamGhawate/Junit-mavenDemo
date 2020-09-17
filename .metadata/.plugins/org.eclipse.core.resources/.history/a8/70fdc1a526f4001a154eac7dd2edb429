@@ -1,0 +1,5 @@
+package com.ngtech.FactoryPattern;
+
+public interface Drinks {
+
+}

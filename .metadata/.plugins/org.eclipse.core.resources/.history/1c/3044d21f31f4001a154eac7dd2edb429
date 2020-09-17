@@ -1,0 +1,9 @@
+package com.ngtech.SingletonPattern;
+
+public class MySingleton {
+
+	public void  display()
+	{
+		System.out.println("Hello ,This is Neelam");
+	}
+}

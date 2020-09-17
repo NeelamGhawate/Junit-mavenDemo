@@ -1,0 +1,23 @@
+package com.tdd.refactoring.example.test;
+
+import static org.junit.Assert.*;
+
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.tdd.refactoring.example.BookShelfRefactoringExample1;
+
+public class BookShelfRefactoringExampleTest1 {
+
+	@Test
+	public void emptyBookShelfWhenNoBookAdded() {
+		BookShelfRefactoringExample1 shelf = new BookShelfRefactoringExample1();
+	    List<String> books = shelf.selectBooks();
+	    assertTrue("BookShelf should be empty.",books.isEmpty());
+	    
+	}
+
+}

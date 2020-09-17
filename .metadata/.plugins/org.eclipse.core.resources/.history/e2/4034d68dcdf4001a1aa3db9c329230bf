@@ -1,0 +1,7 @@
+package com.ngtech.AbstarctFactoryPattern;
+
+public abstract class ColdDrinks implements Drinks 
+{
+	
+
+}

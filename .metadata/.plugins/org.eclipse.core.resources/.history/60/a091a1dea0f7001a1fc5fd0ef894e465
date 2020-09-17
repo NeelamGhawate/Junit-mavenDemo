@@ -1,0 +1,9 @@
+package com.tdd.refactoring.example;
+
+public class BookShelfRefactoringExample0 {
+
+	/*
+	 * FIRST FEATURE As a user, I want to add multiple books to my bookshelf so that
+	 * I can read them later.
+	 */
+}

@@ -1,0 +1,23 @@
+package com.ngtech.AbstarctFactoryPattern;
+
+public class DrinkAbstarctFactory 
+{
+
+	
+
+	public DrinkFactory getDrinksFactory(String ch) 
+	{
+		// TODO Auto-generated method stub
+		
+	         if (ch.equalsIgnoreCase("coldFact"))
+		{
+			return new ColdDrinksFactory();
+		}
+		else
+		{
+			return new HotDrinksFactory();
+		}
+	}
+
+
+}

@@ -1,0 +1,5 @@
+package com.ngtech.SingletonPattern;
+
+public class MySingleton {
+
+}

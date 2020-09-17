@@ -1,0 +1,9 @@
+package com.ngtech.AbstarctFactoryPattern;
+
+public class Pepsi extends ColdDrinks
+{
+	public void drink()
+	{
+		System.out.println("drinking pepsi");
+	}
+}

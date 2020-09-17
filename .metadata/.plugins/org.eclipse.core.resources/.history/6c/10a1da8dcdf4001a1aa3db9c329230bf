@@ -1,0 +1,6 @@
+package com.ngtech.AbstarctFactoryPattern;
+
+public interface Drinks {
+	public void drink();
+
+}

@@ -1,0 +1,17 @@
+package io.javabrais;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class mathUtilsTest2 {
+
+	@Test
+	public final void test() {
+		mathUtils m=new mathUtils();
+		long result=m.sum(45,50);
+		assertEquals(95,result);
+		//System.out.println("This testcase run");
+	}
+
+}

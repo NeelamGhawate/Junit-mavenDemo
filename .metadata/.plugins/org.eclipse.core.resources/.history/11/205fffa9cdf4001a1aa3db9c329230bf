@@ -1,0 +1,9 @@
+package com.ngtech.AbstarctFactoryPattern;
+
+public class Coffee extends HotDrinks{
+	public void drink()
+	{
+		System.out.println("drinking Coffee");
+	}
+
+}

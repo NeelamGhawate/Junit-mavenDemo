@@ -1,0 +1,16 @@
+package com.tdd.refactoring.example;
+
+import java.util.Collections;
+import java.util.List;
+
+public class BookShelfRefactoringExample1 {
+
+	/*
+	 * To make this test case pass, we wrote just enough code to make it pass
+	 */
+
+	public List<String> selectBooks() {
+		return Collections.emptyList();
+	}
+
+}

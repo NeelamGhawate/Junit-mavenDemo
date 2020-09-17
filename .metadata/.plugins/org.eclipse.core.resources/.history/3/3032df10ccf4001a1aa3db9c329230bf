@@ -1,0 +1,6 @@
+package com.ngtech.AbstarctFactoryPattern;
+
+public interface DrinkFactory {
+	public Drinks getDrink(String s);
+
+}
